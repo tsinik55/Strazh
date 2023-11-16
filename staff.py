@@ -19,7 +19,7 @@ import time
 fake = Faker('ru_RU')
 requests = requests.Session()
 requests.trust_env = False
-token = login.create_token()
+token = login.create_token('172.16.132.13')
 
 
 def create_staff(amount, counter=1, total_time=0):
@@ -103,4 +103,4 @@ def create_staff(amount, counter=1, total_time=0):
 
         counter += 1
 
-# create_staff(10)
+create_staff(10)

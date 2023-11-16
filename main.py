@@ -2,7 +2,7 @@ from base64 import b64encode
 from datetime import datetime, timedelta
 from io import BytesIO
 from os import listdir
-from random import choice, randint
+from random import choice, randint, getrandbits
 from socket import gethostbyname, gethostname
 from uuid import uuid4
 
@@ -17,9 +17,9 @@ import requests
 import settings as s
 from warnings import filterwarnings
 
-controller_ip = '172.16.132.13'
-controller_id = '00000097'
-image_path = '.\\Spotty\\'
+# controller_ip = '172.16.132.13'
+# controller_id = '00000097'
+# s.image_path = '.\\Riposte\\'
 
 requests = requests.Session()
 requests.trust_env = False
@@ -30,6 +30,11 @@ def letter(amount):
     for _ in range(amount):
         char += choice('ABEKMHOPCTYX')
     return char
+
+
+def car_number():
+    c_number = f'{(letter(2) + str(randint(100, 999)) + letter(1) + str(randint(0o1, 199)))}'
+    return c_number
 
 
 def create_token(controller_ip):
@@ -77,7 +82,7 @@ def create_visitor(amount, counter=1, total_time=0):
                    'Accept': 'text/plain',
                    'Host': f'{gethostbyname(gethostname())}',
                    'User-Agent': 'PostmanRuntime/7.34.0'}
-        url = f'https://{controller_ip}/api/v1/visitors'
+        url = f'https://{s.controller_ip}/api/v1/visitors'
         requests.post(url, json=body, headers=headers, verify=False)
 
         create_userpic(visitor_uuid, token)
@@ -96,8 +101,8 @@ def create_visitor(amount, counter=1, total_time=0):
         counter += 1
 
 
-def create_staff(amount, counter=1, total_time=0):
-    token = create_token(controller_ip)
+def create_staff(amount, counter=1, total_time=0, code=''):
+    token = create_token(s.controller_ip)
     for _ in range(amount):
         start_time = time.time()
         staff_uuid = uuid4()
@@ -110,6 +115,7 @@ def create_staff(amount, counter=1, total_time=0):
             firstname = fake.first_name_female()
             middle_name = fake.middle_name_female()
             lastname = fake.last_name_female()
+        username = f'{firstname} {middle_name} {lastname}'
         body = {'uuid': f'{staff_uuid}',
                 'name': f'{firstname}',
                 'second_name': f'{middle_name}',
@@ -130,17 +136,19 @@ def create_staff(amount, counter=1, total_time=0):
                    'Accept': 'text/plain',
                    'Host': f'{gethostbyname(gethostname())}',
                    'User-Agent': 'PostmanRuntime/7.34.0'}
-        url = f'https://{controller_ip}/api/v1/staff'
+        url = f'https://{s.controller_ip}/api/v1/staff'
         requests.post(url, json=body, headers=headers, verify=False)
 
-        create_userpic(staff_uuid, token)
+        create_identifier(token, staff_uuid, username, firstname, lastname)
+
+        create_userpic(token, staff_uuid)
 
         elapsed_time = (time.time() - start_time)
         total_time = total_time + elapsed_time
         n_time = str(timedelta(seconds=total_time)).split(':')
 
         print(
-            f'Created {counter} staff members out of {amount}, {firstname} {middle_name} {lastname} UUID [{staff_uuid}], '
+            f'Created {counter} staff members out of {amount}, {firstname} {middle_name} {lastname} UUID [{staff_uuid}],'
             f'creation time {round(elapsed_time, 2)} sec.')
 
         if amount == counter:
@@ -150,10 +158,10 @@ def create_staff(amount, counter=1, total_time=0):
         counter += 1
 
 
-def create_userpic(uuid, token):
+def create_userpic(token, uuid):
     size = 320, 320
     output = BytesIO()
-    image_filename = open((image_path + choice(listdir(image_path))), 'rb')
+    image_filename = open((s.image_path + choice(listdir(s.image_path))), 'rb')
     image = Image.open(image_filename)
     new_image = Image.new('RGBA', image.size, 'white')
     new_image.paste(image, (0, 0), image)
@@ -168,46 +176,61 @@ def create_userpic(uuid, token):
                'Accept': 'text/plain',
                'Host': f'{gethostbyname(gethostname())}',
                'User-Agent': 'PostmanRuntime/7.34.0'}
-    url = f'https://{controller_ip}/api/v1/images/'
+    url = f'https://{s.controller_ip}/api/v1/images/'
     requests.post(url, json=body, headers=headers, verify=False)
 
     # Send user image
 
     body = {'image_data': f'data:image/jpeg;base64,{encoded_string}',
             'uuid': f'{uuid}'}
-    url = f'https://{controller_ip}/api/v1/images/{uuid}'
+    headers = {'Content-type': 'application/json',
+               'Authorization': f'Bearer {token}',
+               'Accept': 'text/plain',
+               'Host': f'{gethostbyname(gethostname())}',
+               'User-Agent': 'PostmanRuntime/7.34.0'}
+    url = f'https://{s.controller_ip}/api/v1/images/{uuid}'
     requests.put(url, json=body, headers=headers, verify=False)
 
 
-def create_identifier(user_uuid, ):
-    token = create_token(controller_ip)
-    identifier_uuid = uuid4()
-    identifier_format = numpy.random.choice(['qr', 'barcode', 'card'])
+def create_identifier(token, user_uuid, username, firstname, lastname):
+    code = str(randint(100000000000, 999999999999))
     current_time = int(time.mktime(datetime.now().timetuple()))
+    current_datetime = datetime.now()
+    # ext_priv = numpy.random.choice(
+    #     ['SET_AP_STATE', 'SET_ON_GUARD', 'UNSET_ON_GUARD', 'START_AUTOMATION', 'CONFIRM_ACCESS', 'EASY_ACCESS',
+    #      'SKIP_ZONES_CONTROL'])
+    # print(ext_priv)
+
     body = {
-        'code': f'{identifier_uuid}',
-        'privilege': '',
-        'disposable': True,
-        'no_expire_delete': True,
-        'active_from': f'{current_time - randint(9999000, 99999000)}000',
-        'active_to': f'{current_time + randint(199000, 1999000)}000',
-        # 'first_access': f'{current_time - randint(9999000, 99999000)}000',
-        # 'last_access': f'{current_time - randint(9000, 1999000)}000',
-        'user_uuid': f'{user_uuid}',
-        'comment': '',
-        'format': f'{identifier_format}',
-        'ext_privileges': ''
+        'code': code,
+        'privilege': randint(1, 3),
+        'disposable': bool(getrandbits(1)),
+        'comment': f'Идентификатор создан для пользователя {username} {current_datetime.strftime("%d %b %Y в %H:%M:%S")}',
+        # 'user_uuid': f'{user_uuid}',
+        'active_from': int(f'{current_time - randint(9999000, 99999000)}000'),
+        'active_to': int(f'{current_time + randint(199000, 79999000)}000'),
+        'format': numpy.random.choice(['qr', 'barcode', 'card']),
+        'no_expire_delete': False,
+        'ext_privileges': []
     }
     headers = {'Content-type': 'application/json',
                'Authorization': f'Bearer {token}',
                'Accept': 'text/plain',
                'Host': f'{gethostbyname(gethostname())}',
                'User-Agent': 'PostmanRuntime/7.34.0'}
-    url = f'https://{controller_ip}/api/v1/identifiers'
+    url = f'https://{s.controller_ip}/api/v1/identifiers'
     requests.post(url, json=body, headers=headers, verify=False)
+    body = {'uuid': f'{user_uuid}',
+            'name': f'{firstname}',
+            'surname': f'{lastname}',
+            'access_point': '',
+            'access_profiles': [],
+            'pin': '',
+            "cards": [f'{code}'],
+            }
+    print(body)
+    url = f'https://{s.controller_ip}/api/v1/staff/{user_uuid}'
+    requests.put(url, json=body, headers=headers, verify=False)
 
 
-create_identifier(1)
-
-create_staff(1000)
-# create_visitor(1)
+create_staff(100)
