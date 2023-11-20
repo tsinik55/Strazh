@@ -11,33 +11,24 @@ from PIL import Image
 from faker import Faker  # fake data library
 import time
 
-fake = Faker('ru_RU')
-
 import requests
 import settings as s
 from warnings import filterwarnings
-
-# controller_ip = '172.16.132.13'
-# controller_id = '00000097'
-# s.image_path = '.\\Riposte\\'
+from locale import setlocale, LC_ALL
 
 requests = requests.Session()
 requests.trust_env = False
+fake = Faker('ru_RU')
 
-
-def letter(amount):
-    char = ''
-    for _ in range(amount):
-        char += choice('ABEKMHOPCTYX')
-    return char
-
+setlocale(LC_ALL, 'ru_RU.utf8')
 
 def car_number():
-    c_number = f'{(letter(2) + str(randint(100, 999)) + letter(1) + str(randint(0o1, 199)))}'
+    # char = f'{choice('ABEKMHOPCTYX')}'
+    c_number = f'{(choice("ABEKMHOPCTYX") + choice("ABEKMHOPCTYX") + str(randint(100, 999)) + choice("ABEKMHOPCTYX") + str(randint(0o1, 199)))}'
     return c_number
 
 
-def create_token(controller_ip):
+def create_token():
     filterwarnings('ignore')
     url = f'https://{s.controller_ip}/api/v1/login'
     headers = {'Content-type': 'application/json', 'Accept': 'text/plain', 'User-Agent': 'PostmanRuntime/7.34.0'}
@@ -49,7 +40,7 @@ def create_token(controller_ip):
 
 
 def create_visitor(amount, counter=1, total_time=0):
-    token = create_token(s.controller_ip)
+    token = create_token()
     for _ in range(amount):
         start_time = time.time()
         current_time = int(time.mktime(datetime.now().timetuple()))
@@ -73,7 +64,7 @@ def create_visitor(amount, counter=1, total_time=0):
                 'last_access': f'{current_time - randint(9000, 1999000)}000',
                 'status': choice(('WAITING', 'ACTIVE:INNER', 'ACTIVE:OUTER', 'BANNED', 'NOT-COME', 'ARCHIVE',
                                   'VIOLATION')),
-                'car_number': f'{(letter(2) + str(randint(100, 999)) + letter(1) + str(randint(0o1, 199)))}',
+                'car_number': car_number(),
                 'email': f'{fake.unique.ascii_free_email()}',
                 'comment': f'{fake.address()}',
                 'banned': False}
@@ -101,12 +92,12 @@ def create_visitor(amount, counter=1, total_time=0):
         counter += 1
 
 
-def create_staff(amount, counter=1, total_time=0, code=''):
-    token = create_token(s.controller_ip)
+def create_staff(amount, counter=1, total_time=0):
+    token = create_token()
     for _ in range(amount):
         start_time = time.time()
         staff_uuid = uuid4()
-        gender = numpy.random.choice(['male', 'female'], p=[0.5, 0.5])
+        gender = numpy.random.choice(['male', 'female'])
         if gender == 'male':
             firstname = fake.first_name_male()
             middle_name = fake.middle_name_male()
@@ -116,30 +107,35 @@ def create_staff(amount, counter=1, total_time=0, code=''):
             middle_name = fake.middle_name_female()
             lastname = fake.last_name_female()
         username = f'{firstname} {middle_name} {lastname}'
+
+        code = create_identifier(token, firstname, middle_name, lastname)
+
         body = {'uuid': f'{staff_uuid}',
                 'name': f'{firstname}',
                 'second_name': f'{middle_name}',
                 'surname': f'{lastname}',
-                'car_number': f'{(letter(2) + str(randint(100, 999)) + letter(1) + str(randint(0o1, 199)))}',
+                'car_number': car_number(),
                 'email': f'{fake.unique.ascii_free_email()}',
                 'access_profiles': [],
                 'access_point': '',
-                'cards': [],
+                "cards": [f'{code}'],
                 'pin': '',
                 'biometry': {
                     'models': []
                 },
                 'comment': f'{fake.address()}',
-                'banned': False}
+                'banned': False,
+                'department': choice(('Администрация', 'АХО', 'Бухгалтерия', 'Юридический отдел', 'ИТ', 'Прочие',
+                                      'Внештатные сотрудники', 'Арендаторы', 'Отдел имущества', 'Служба безопасности')),
+                }
         headers = {'Content-type': 'application/json',
                    'Authorization': f'Bearer {token}',
                    'Accept': 'text/plain',
                    'Host': f'{gethostbyname(gethostname())}',
                    'User-Agent': 'PostmanRuntime/7.34.0'}
         url = f'https://{s.controller_ip}/api/v1/staff'
-        requests.post(url, json=body, headers=headers, verify=False)
 
-        create_identifier(token, staff_uuid, username, firstname, lastname)
+        requests.post(url, json=body, headers=headers, verify=False)
 
         create_userpic(token, staff_uuid)
 
@@ -148,7 +144,8 @@ def create_staff(amount, counter=1, total_time=0, code=''):
         n_time = str(timedelta(seconds=total_time)).split(':')
 
         print(
-            f'Created {counter} staff members out of {amount}, {firstname} {middle_name} {lastname} UUID [{staff_uuid}],'
+            f'Created {counter} staff members out of {amount}, {firstname} {middle_name} {lastname} '
+            f'UUID [{staff_uuid}],'
             f'creation time {round(elapsed_time, 2)} sec.')
 
         if amount == counter:
@@ -192,21 +189,17 @@ def create_userpic(token, uuid):
     requests.put(url, json=body, headers=headers, verify=False)
 
 
-def create_identifier(token, user_uuid, username, firstname, lastname):
+def create_identifier(token, firstname, middle_name, lastname):
     code = str(randint(100000000000, 999999999999))
     current_time = int(time.mktime(datetime.now().timetuple()))
     current_datetime = datetime.now()
-    # ext_priv = numpy.random.choice(
-    #     ['SET_AP_STATE', 'SET_ON_GUARD', 'UNSET_ON_GUARD', 'START_AUTOMATION', 'CONFIRM_ACCESS', 'EASY_ACCESS',
-    #      'SKIP_ZONES_CONTROL'])
-    # print(ext_priv)
 
     body = {
         'code': code,
         'privilege': randint(1, 3),
         'disposable': bool(getrandbits(1)),
-        'comment': f'Идентификатор создан для пользователя {username} {current_datetime.strftime("%d %b %Y в %H:%M:%S")}',
-        # 'user_uuid': f'{user_uuid}',
+        'comment': f'Идентификатор создан для пользователя {firstname} {middle_name} {lastname} '
+                   f'{current_datetime.strftime("%d %b %Y в %H:%M:%S")}',
         'active_from': int(f'{current_time - randint(9999000, 99999000)}000'),
         'active_to': int(f'{current_time + randint(199000, 79999000)}000'),
         'format': numpy.random.choice(['qr', 'barcode', 'card']),
@@ -220,17 +213,9 @@ def create_identifier(token, user_uuid, username, firstname, lastname):
                'User-Agent': 'PostmanRuntime/7.34.0'}
     url = f'https://{s.controller_ip}/api/v1/identifiers'
     requests.post(url, json=body, headers=headers, verify=False)
-    body = {'uuid': f'{user_uuid}',
-            'name': f'{firstname}',
-            'surname': f'{lastname}',
-            'access_point': '',
-            'access_profiles': [],
-            'pin': '',
-            "cards": [f'{code}'],
-            }
-    print(body)
-    url = f'https://{s.controller_ip}/api/v1/staff/{user_uuid}'
-    requests.put(url, json=body, headers=headers, verify=False)
+    return code
 
 
-create_staff(100)
+create_staff(30000)
+
+# print(car_number())
