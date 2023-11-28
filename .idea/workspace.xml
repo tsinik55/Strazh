@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f10b784b-d013-45cc-be3b-ba7ae11431c0" name="Changes" comment="Added BlobEmoji sticker pack">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_11_2023_13_04_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_11_2023_13_04__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/b1nzyblob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/b1nzyblob2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/b4nzyblob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blob0w0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blob3c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blob3cevil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobaffection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobamused.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobangel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobangery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobangry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobangry2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobangrypuff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobartist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobaviator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobawkward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobaww.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbandage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbanhammer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbathtub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobblackcat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobblush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobboost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbored.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbowing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobbroken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcamera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcheeky.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcheer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcheerful.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcheerful2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobclipboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcmereyou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcocoa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcomfort.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobconcerned.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobconfounded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobconfused.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcouncil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcouple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcowboy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobcry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdancer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdead.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobderpy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobderpyhappy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdetective.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdevil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdevilsmile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdisapproval.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdisguise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdizzy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdizzy2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdoctor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdoubt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdoubtful.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobdrool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobeagle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobembarrassed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobembarrassed2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobenjoy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloberm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobexpressionless.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobeyesdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobeyesup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfacemask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfacepalm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfearful.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfingerguns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfingerscrossed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfirefighter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfistbumpL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfistbumpR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobflushed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfreezing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfrog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfrown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfrowning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobfrowningbig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgamer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgiggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobglare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobglarepolice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobglassesdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgoat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgoodmorning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgoodmorningreverse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgoodnight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgoodnightreverse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgrimace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgrin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobgrumpy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobheart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhearteyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhighfive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhug2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhuh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhushed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhyperthink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhyperthinkfast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobhypesquad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobidea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobimfine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobinlove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobjam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobjoy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobkiss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobkissblush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobkissheart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloblamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloblul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmaracas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmelt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmeltblush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmeltsob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmeltsoblove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmindblown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmlem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmorning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobmoustache.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnauseated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnerd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnervous.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnervous2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnervouspleading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobneutral.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobninja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnitro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobno.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnogood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomchocolate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomchristmas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomcookie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomglobal1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomglobal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomglobal3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnomouth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnostar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnostar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobnwn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobokhand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobomo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobonfire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobono.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobooh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloboohcry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobopenmouth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloboro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloboutage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/bloboverheated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobovo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobowo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobowo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobowoevil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobowosquint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpainpats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpanic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpanic2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpartlysunny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobparty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpatrol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpeek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpensive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpensivepray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpirate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpleading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpolice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpoliceangery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpoll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpopcorn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpopsicle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpout2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobpumpkin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobrage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobrageangry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobreach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobreachdrool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobreachfront.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobreachfrown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobreachreverse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobreachsob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobrelieved.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobrofl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobrollingeyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsadpats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsadrain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsalute.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsanta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobscarf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobscream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsecret.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobshh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobshrug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsleeping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsleepless.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobslightsmile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmilehappy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmilehappyeyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmilesweat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmilesweat2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmiletear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmiley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmirk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsmirk2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsneezing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsnuggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsobglasses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobspam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsplosion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobspy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsquee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobstare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobstarstruck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobstop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobstudent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsunglasses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsurprised.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsweats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobsweatsweary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobteefs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthanks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthief.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinkingcool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinkingdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinkingeyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinkingfast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinkingglare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinkingsmirk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthinksmart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthonkang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthumbsdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthumbsup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobthump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtilt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtired.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtongue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtonguewink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtorch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtrans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtriumph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobtriumph2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobugh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobunamused.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobunsure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobupset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobupsidedown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlobEmoji/blobuwu.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YEGzsbKBmYI8N6BrnKpJKrfdPo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f10b784b-d013-45cc-be3b-ba7ae11431c0" name="Changes" comment="" />
+      <created>1700083590986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700083590986</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Cleanup of small files">
+      <option name="closed" value="true" />
+      <created>1701198212116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701198212116</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added BlobEmoji sticker pack">
+      <option name="closed" value="true" />
+      <created>1701198468016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701198468016</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleanup of small files" />
+    <MESSAGE value="Added BlobEmoji sticker pack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BlobEmoji sticker pack" />
+  </component>
+</project>
